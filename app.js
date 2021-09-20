@@ -99,8 +99,12 @@ function copyFirstLastName(listUsers) {
         return tempUser;
     });
 }
+<<<<<<< HEAD
 const user = 6;
 const objectNew1 = copyFirstLastName(user);
+=======
+const objectNew1 = copyFirstLastName(users);
+>>>>>>> e318b4c88d34fb5b162c63369f5e6b553c3d0a22
 console.log(objectNew1);
 
 // 5.2 

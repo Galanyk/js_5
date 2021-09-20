@@ -81,14 +81,14 @@ const address = users.reduce((acc, { address }, ) => {
 }, {
     countries: [],
     citys: []
-})
-console.log(address.countries + "\n" + address.citys)
+});
+console.log(address.countries + "\n" + address.citys);
 
 // 5.1
 function copyFirstLastName(listUsers) {
     if (listUsers.length < 1 || listUsers.constructor.name !== 'Array') {
         alert("Collection is empty")
-        return [];
+        return listUsers;
     }
 
     return listUsers.map((user) => {
@@ -99,30 +99,30 @@ function copyFirstLastName(listUsers) {
         return tempUser;
     });
 }
-const objectNew1 = copyFirstLastName(users)
-console.log(objectNew1)
+const user = 6;
+const objectNew1 = copyFirstLastName(user);
+console.log(objectNew1);
 
 // 5.2 
-
 
 function returnObjectKeys(users) {
     if (users.length < 1 || users.constructor.name !== 'Array') {
         alert("Collection is empty")
-        return [];
+        return users;
     }
 
     return users.filter(user => Object.keys(user).length > 3);
 
 }
 
-const objectNew2 = returnObjectKeys(users)
-console.log(objectNew2)
+const objectNew2 = returnObjectKeys(users);
+console.log(objectNew2);
 
 // 5.3
 function filterObjectByType(collectionUsers) {
     if (collectionUsers.length < 1 || collectionUsers.constructor.name !== 'Array') {
         alert("Collection is empty")
-        return [];
+        return users;
     }
     return collectionUsers.filter(user => {
         const tempUser = Object.values(user);
@@ -133,5 +133,5 @@ function filterObjectByType(collectionUsers) {
     });
 }
 
-const newUsers = filterObjectByType(users)
-console.log(newUsers)
+const newUsers = filterObjectByType(users);
+console.log(newUsers);

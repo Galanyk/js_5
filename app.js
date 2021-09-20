@@ -99,16 +99,9 @@ function copyFirstLastName(listUsers) {
         return tempUser;
     });
 }
-<<<<<<< HEAD
-const user = 6;
-const objectNew1 = copyFirstLastName(user);
-=======
 const objectNew1 = copyFirstLastName(users);
->>>>>>> e318b4c88d34fb5b162c63369f5e6b553c3d0a22
-console.log(objectNew1);
 
 // 5.2 
-
 function returnObjectKeys(users) {
     if (users.length < 1 || users.constructor.name !== 'Array') {
         alert("Collection is empty")
@@ -118,7 +111,6 @@ function returnObjectKeys(users) {
     return users.filter(user => Object.keys(user).length > 3);
 
 }
-
 const objectNew2 = returnObjectKeys(users);
 console.log(objectNew2);
 
@@ -136,6 +128,5 @@ function filterObjectByType(collectionUsers) {
         );
     });
 }
-
 const newUsers = filterObjectByType(users);
 console.log(newUsers);
